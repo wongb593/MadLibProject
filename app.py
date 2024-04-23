@@ -10,21 +10,27 @@ A Mad-Lib-like program school project."""
 # Get user input
 
 # Build narrative
-A stray Lamb stood drinking early one morning on the bank of a woodland stream. That very same morning a hungry Wolf came by farther up the stream, hunting for something to eat. He soon got his eyes on the Lamb. As a rule Mr. Wolf snapped up such delicious morsels without making any bones about it, but this Lamb looked so very helpless and innocent that the Wolf felt he ought to have some kind of an excuse for taking its life.
+story = "The great Trojan War started with a few {adjective 1} Gods and an apple..."
+story += "During the wedding of Thetis and Peleus, the goddess of discord, Eris, was not invited for "
+story += "{apparent} reasons. Eris felt {adjective} and, arriving at the wedding, tossed in the "
+story += "middle of the feast of the gods a golden apple, saying “to the {adjective 2}”. The apple "
+story += "was claimed by Hera, Athena and Aphrodite, sparking a {adjective} dispute among "
+story += "the three. The goddesses asked Zeus who the apple belonged to {in other words, who is "
+story += "the {adjective} of them all} and Zeus said that Paris, a mortal man and the rightful Prince "
+story += "of Troy, should choose."
 
-"How dare you paddle around in my stream and stir up all the mud!" he shouted fiercely. "You deserve to be punished severely for your rashness!"
+story += "Paris at the time was living as a shepherd on Mount Ida and was not aware of his "
+story += "{adjective} descent. He had been abandoned as a {noun}, because of an {noun} that "
+story += "said he would {verb} the {noun} of his city. The three goddesses appeared before the "
+story += "shepherd Paris and asked him to choose who is the {adjective} of them all. Because "
+story += "Paris at first was {adjective}, each of the goddesses offered him a gift: Hera offered him "
+story += "{noun} and {noun}, Athena {noun} and {noun} among men, and Aphrodite offered him the "
+story += "{noun} of the {adjective} {noun} in the world. Without {adjective}, Paris gave the "
+story += "golden apple to Aphrodite. From that day on, Aphrodite was offering {noun} to Paris. "
+story += "She was the one that informed him of his {adjective} {noun} and {verb} him {pronoun} "
+story += "back to Troy. The {pronoun} is {noun}..."
+print(story)
 
-"But, your highness," replied the trembling Lamb, "do not be angry! I cannot possibly muddy the water you are drinking up there. Remember, you are upstream and I am downstream."
-
-"You do muddy it!" retorted the Wolf savagely. "And besides, I have heard that you told lies about me last year!" "How could I have done so?" pleaded the Lamb. "I wasn't born until this year."
-
-"If it wasn't you, it was your brother!"
-
-"I have no brothers."
-
-"Well, then," snarled the Wolf, "It was someone in your family anyway. But no matter who it was, I do not intend to be talked out of my breakfast."
-
-And without more words the Wolf seized the poor Lamb and carried her off to the forest.
 # Display results
 
 # Thank the user and quit
