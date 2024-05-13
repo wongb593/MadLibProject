@@ -1,56 +1,84 @@
 """
 Mad Lib-Type Project
 By Benjamin Wong
-A Mad-Lib-like program school project."""
+A Mad-Lib-like program school project.
+"""
 
 # Import statements
 
+# Clearing the Screen
+
+# import only system from os
+from os import system, name
+ 
+# import sleep to show output for some time period
+from time import sleep
+ 
+# define our clear function
+def clear():
+ 
+    # for windows
+    if name == 'nt':
+        _ = system('cls')
+ 
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = system('clear')
+ 
+# sleep for 1 seconds after printing output
+sleep(1)
+ 
+# now call function we defined above
+clear()
+
 # Welcome the user
 print("Hello user, this program here is a mad-lib used for entertainment.")
+
 # Get user input
 adjective_1 = input("Think of a random adjective:")
+clear()
 adjective_2 = input("Think of a word to describe a dispute:")
+clear()
 adjective_3 = input("Think of a first reaction you would have:")
+clear()
 adjective_4 = input("Think of another adjective:")
+clear()
 adjective_eris = input("How would you feel after not being invited to an event:")
+clear()
 adjective_est = input("Think of an adjective that ends with est:")
+clear()
 reason = input("Think of a reason for not being invited:")
+clear()
 noun_person1 = input("Think of a something about why a person has been abandoned:")
+clear()
 noun_person2 = input("Think of something someone would protect:")
+clear()
 verb_to = input("Think of a verb that you would do to something:")
+clear()
 noun = input("Think of a noun:")
-noun_2 = input("Think of a noun:")
-# Build narrative
-story = f"The great Trojan War started with a few {adjective_1} Gods and an apple..."
-story += f"During the wedding of Thetis and Peleus, the goddess of discord, Eris, was not invited for "
-story += f"{reason} . Eris felt {adjective_eris} and, arriving at the wedding, tossed in the "
-story += f"middle of the feast of the gods a golden apple, saying “to the {adjective_est}”. The apple "
-story += f"was claimed by Hera, Athena and Aphrodite, sparking a {adjective_2} dispute among "
-story += f"the three. The goddesses asked Zeus who the apple belonged to (in other words, who is "
-story += f"the {adjective_est} of them all) and Zeus said that Paris, a mortal man and the rightful Prince "
-story += f"of Troy, should choose."
-story += f"Paris at the time was living as a shepherd on Mount Ida and was not aware of his "
-story += f"divine descent. He had been abandoned as a {noun_person1}, because of an prophecy that "
-story += f"said he would {verb_to} the {noun_person2} of his city. The three goddesses appeared before the "
-story += f"shepherd Paris and asked him to choose who is the {adjective_est} of them all. "
-story += f"Paris at first was {adjective_3}, but each of the goddesses offered him a gift: Hera offered him "
-story += f"royalty and {noun}, Athena the skill of war and wisdom among men, and Aphrodite offered him the "
-story += f"{adjective_4} {noun_2} in the world. Without a second, Paris gave the "
-story += f"golden apple to Aphrodite. From that day on, Aphrodite was offering {noun_2} to Paris everyday. "
+clear()
+noun_2 = input("Think of another noun:")
+clear()
 
-adjective_1 = input("Think of a random adjective:")
-adjective_2 = input("Think of a word to describe a dispute:")
-adjective_3 = input("Think of a first reaction you would have:")
-adjective_4 = input("Think of another adjective:")
-adjective_eris = input("How would you feel after not being invited to an event:")
-adjective_est = input("Think of an adjective that ends with est:")
-reason = input("Think of a reason for not being invited:")
-noun_person1 = input("Think of a something about why a person has been abandoned:")
-noun_person2 = input("Think of something someone would protect:")
-verb_to = input("Think of a verb that you would do to something:")
-noun = input("Think of a noun:")
-noun_2 = input("Think of a noun:")
+# Build narrative
+start = input("hit enter to begin\n")
+clear()
+story = f"\tThe great Trojan War started with a few {adjective_1} Gods and an apple... \n"
+story += f"During the wedding of Thetis and Peleus, the goddess of discord, Eris, was not invited for {reason}. \n" 
+story += f"Eris felt {adjective_eris} and, arriving at the wedding, tossed in the \n"
+story += f"middle of the feast of the gods a golden apple, saying “to the {adjective_est}”. \n"
+story += f"The apple was claimed by Hera, Athena and Aphrodite, sparking a {adjective_2} dispute among the three. \n"
+story += f"The goddesses asked Zeus who the apple belonged to (in other words, who is- \n"
+story += f"the {adjective_est} of them all) and Zeus said that Paris, a mortal man and the rightful Prince of Troy, should choose.\n"
+story += f"Paris at the time was living as a shepherd on Mount Ida and was not aware of his divine descent.\n"
+story += f"He had been abandoned as a {noun_person1}, because of an prophecy that said he would {verb_to} the {noun_person2} of his city.\n"
+story += f"The three goddesses appeared before the shepherd Paris and asked him to choose who is the {adjective_est} of them all. \n"
+story += f"Paris at first was {adjective_3}, but each of the goddesses offered him a gift: Hera offered him royalty and {noun},\n"
+story += f" Athena the skill of war and wisdom among men, and Aphrodite offered him the most {adjective_4} {noun_2} in the world. \n"
+story += f"Without a second, Paris gave the golden apple to Aphrodite. From that day on, Aphrodite was offering {noun_2} to Paris everyday. "
+
 # Display results
 print(story)
+
 # Thank the user and quit
-print("Thank you for using the program")
+print("\nThank you for using the program.")   
